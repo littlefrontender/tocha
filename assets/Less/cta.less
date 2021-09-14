@@ -1,0 +1,152 @@
+// main: ../CSS/style.less
+
+.cta {
+    width: 100%;
+    height: 468px;
+    padding: 90px 165px;
+}
+
+.cta__container {
+    background: url('../images/BG3.png');
+    width: 1110px;
+    height: 288px;
+    border-radius: 6px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-end;
+}
+
+.cta__pic {
+    display: block;
+    width: 314px;
+    height: 272px;
+    margin-left: 86px;
+    margin-right: 10px;
+}
+
+.cta__plugIn {
+    height: 237.64px;
+    width: 440px;
+
+    h2 {
+        font-weight: 800;
+        font-size: 2.06rem;
+        line-height: 41px;
+        color: #fff;
+    }
+
+    form {
+        display: flex;
+        margin-top: 32px;
+    }
+
+    .cta__input {
+        width: 248px;
+        height: 52px;
+        border: none;
+        padding: 14px 16px;
+        border-radius: 6px 0 0 6px;
+
+        &:focus {
+            outline: 1px solid #605DEC;
+        }
+
+        &:hover {
+            outline: 1px solid #E8E6F8
+        }
+    }
+
+    input[type="email"]::placeholder {
+        font-weight: 400;
+        font-family: 'Gilroy';
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+
+    .cta__sendButton {
+        width: 120px;
+        height: 52px;
+        border: none;
+        background: @black;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        font-size: .875rem;
+        line-height: 20px;
+        border-radius: 0 6px 6px 0;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cta {
+        height: 396px;
+        padding: 54px 40px;
+    }
+
+    .cta__container {
+        width: 688px;
+        height: 288px;
+        background: url('../images/BG3__x768.png') no-repeat;
+    }
+
+    .cta__pic {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    .cta__plugIn {
+        width: 315px;
+    
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+
+    .cta {
+        height: 575px;
+        padding: 54px 23px;
+    }
+
+    .cta__pic {
+        margin: 0 auto;
+    }
+
+    .cta__container {
+        background: url('../images/BGx375.png');
+        width: 330px;
+        height: 467px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .cta__plugIn {
+        height: auto;
+        width: 280px;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+        }
+
+        .cta__input {
+            width: 151px;
+            height: 44px;
+        }
+
+        .cta__sendButton {
+            width: 120px;
+            height: 44px;
+        }
+
+        form {
+            margin-top: 16px;
+        }
+    }
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocha</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header id='header'>
+        <div class="header__top">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="" width="55" height="39.63">
+                <div class="logo__name"><p>tocha</p></div>
+            </div>
+            <div class="header__buttons">
+                <a href="#log_popup"><button class="header__login" type='button'>Вход</button></a>
+                <a href="#sign_popup"><button class="header__signin" type='button'>Регистрация</button></a>
+            </div>
+            <a class="header__burger" href="#burger__open">
+                    <img class="burger__pic" src="assets/icons/burger.svg" alt="">
+            </a> <!--/.header__burger-->
+            <div class="header__popup" id='burger__open'>
+                <a href="#header"><img src='assets/icons/close.svg' class="popup__close" alt=''></a>
+                <a href="#log_popup"><button class="header__login" type='button'>Вход</button></a>
+                <a href="#sign_popup"><button class="header__signin" type='button'>Регистрация</button></a>
+            </div> <!--/.header__popup-->
+        </div> <!--/.container__header-->
+
+        <div class="header__entrance">
+            <div class="header__greetings">
+                <h1 class="title">
+                    <span>Telegram чат</span> 
+                    <br>на вашем сайте
+                </h1>
+                <div class="lead">
+                    <p>Общение с клиентами станет простым
+                        <br>и удобным, а подключение займет 5 минут.
+                        <br>Первый месяц — <span>бесплатно!</span></p>
+                </div>
+                <button class="connect" type='button'>Подключить</button>
+            </div> <!--/.header__greetings-->
+        </div><!--/.header__entrance-->
+
+        <div class="signInPopup" id='sign_popup'>
+                <div class="signInPopup__window">
+                    <a href="#header"><img src='assets/icons/close.svg' class="popup__close" alt=''></a>
+                    <h2 class="signInPopup__title">Регистрация</h2>
+                    <form action="/" class="signInPopup__form">
+                    <input type="tel" class="telephone" placeholder='Телефон' id='telephone' required>
+                    <input type="email" class="email" placeholder='Электронная почта' id='email' required>
+                    <input type="password" class="password" placeholder='Пароль' id='password' required>
+                    <input type="password" class="repeatPassword" placeholder='Повторите пароль' id='repeatPassword' required>
+                    <button class="enter" type="submit">Войти</button>
+                    </form>
+                </div> <!--/.signInPopup__window-->
+        </div> <!--/.signInPopup-->
+
+        <div class="logInPopup" id='log_popup'>
+                <div class="logInPopup__window">
+                    <a href="#header"><img src='assets/icons/close.svg' class="popup__close" alt=''></a>
+                    <h2 class="logInPopup__title">Вход</h2>
+                    <form action="/" class="logInPopup__form">
+                    <input type="tel" class="telephone" placeholder='Телефон' id='telephone' required>
+                    <input type="password" class="password" placeholder='Пароль' id='password' required>
+                    <a href="#">Напомнить пароль</a>
+                    <button class="enter" type="submit">Войти</button>
+                    </form>
+                </div> <!--/.logInPopup__window-->
+        </div> <!--/.logInPopup-->
+
+    </header>
+
+    <section class="content">
+        <div class="content__container">
+            <div class="content__left">
+                <h2 class="title">
+                    Tocha Online — это
+                </h2>
+                <div class="content__feature">
+                    <img src="assets/images/Vector.png" alt="">
+                    <div class="content__block">
+                        <h3>Ничего лишнего</h3>
+                        <p>Отсутствие лишних приложений для операторов. Оператору не нужно учиться работать с чатом</p>
+                    </div>
+                </div>
+                <div class="content__feature">
+                    <img src="assets/images/Vector2.png" alt="">
+                    <div class="content__block">
+                        <h3>Простота</h3>
+                        <p>Простая установка на сайт</p>
+                    </div>
+                </div>
+                <div class="content__feature">
+                    <img src="assets/images/Vector3.png" alt="">
+                    <div class="content__block">
+                        <h3>Несколько ассистентов</h3>
+                        <p>Возможность подключения нескольких ассистентов</p>
+                    </div>
+                </div>
+                <div class="content__feature">
+                    <img src="assets/images/Vector4.png" alt="">
+                    <div class="content__block">
+                        <h3>Кастомизация</h3>
+                        <p>Настройка интерфейса под нужды сайта</p>
+                    </div>
+                </div>
+            </div> <!--/.content__left-->
+            <img src="assets/images/content__img.png" alt="" class="content__right">
+        </div> <!--/.content__container-->
+    </section> <!--/.content-->
+
+    <section class="tarif">
+        <div class="tarif__container">
+            <h2 class="tarif__title">Тарифы</h2>
+            <div class="tarif__headline">
+                <p>Стоимость зависит от трафика сайта</p>
+            </div>
+            <div class="tarif__items">
+                <div class="tarif__slider">
+                    <div class="tarif__item">
+                        <div class="tarif__item--title">
+                            <h3>Бесплатно</h3>
+                        </div> <!--/.tarif__item--title-->
+                        <div class="tarif__item--inf">
+                            <h4>Пробный период <br>на 1 месяц</h4>
+                            <p>0₽/первый месяц</p>
+                        </div> <!--/.tarif__item--inf-->
+                        <button class="tarif__item--btn">Подключить за 0₽</button>
+                    </div>
+                    <div class="tarif__item">
+                        <div class="tarif__item--title">
+                            <h3>Базовый</h3>
+                        </div> <!--/.tarif__item--title-->
+                        <div class="tarif__item--inf">
+                            <h4>Менее 1000 <br>посещений в сутки</h4>
+                            <p>200₽/первый месяц</p>
+                        </div> <!--/.tarif__item--inf-->
+                        <button class="tarif__item--btn">Подключить за 200₽</button>
+                    </div>
+                    <div class="tarif__item">
+                        <div class="tarif__item--title">
+                            <h3>Премиум</h3>
+                        </div> <!--/.tarif__item--title-->
+                        <div class="tarif__item--inf">
+                            <h4>Более 1000
+                                <br>посещений в сутки</h4>
+                            <p>500₽/первый месяц</p>
+                        </div> <!--/.tarif__item--inf-->
+                        <button class="tarif__item--btn">Подключить за 500₽</button>
+                    </div>
+                </div> <!--/.tarif__slider-->
+
+                <nav class='sliderTarif'>
+                    <button class="sliderTarif__toggle active" type="button"></button>
+                    <button class="sliderTarif__toggle" type="button"></button>
+                    <button class="sliderTarif__toggle" type="button"></button>
+                </nav> <!--/.sliderTarif-->
+
+            </div> <!--/.tarif__items-->
+
+        </div> <!--/.tarif__container-->
+    </section> <!--/.tarif-->
+
+    <section class="steps">
+
+        <div class="steps__container">
+
+            <h2 class="steps__title">Всего 3 шага для подключения Telegram чата</h2>
+
+            <div class="steps__blocks">
+                <div class="steps__sliderblock">
+                    <div class="steps__block">
+                        <div class="round">1</div>
+                        <h4 class="title">Telegram bot</h4>
+                        <p class="info">Вы создаёте Telegram бота <br>для вашего сайта</p>
+                        <img src="assets/images/iphone01.png" alt="">
+                    </div>
+                    <div class="steps__block steps__block--2nd">
+                        <div class="round">2</div>
+                        <h4 class="title">Подключение Tocha</h4>
+                        <p class="info">Tocha подключает Telegram бота <br>к вашиму сайту</p>
+                        <img src="assets/images/iphone02.png" alt="" id='second'>
+                    </div>
+                    <div class="steps__block">
+                        <div class="round">3</div>
+                        <h4 class="title">Telegram-чат</h4>
+                        <p class="info">Консультант отвечает <br>на вопросы посетителей сайта</p>
+                        <img src="assets/images/iphone03.png" alt="">
+                    </div>
+                </div> <!--/.steps__sliderblock-->
+            </div> <!--/.steps__blocks-->
+
+            <nav class='steps__slider'>
+                <button class="sliderSteps__toggle active" type="button"></button>
+                <button class="sliderSteps__toggle" type="button"></button>
+                <button class="sliderSteps__toggle" type="button"></button>
+            </nav> <!--/.steps__slider-->
+
+        </div> <!--/.steps__container-->
+
+    </section> <!--/.steps-->
+
+    <section class="testimonials">
+        <div class="testimonials__container">
+
+            <div class="testimonials__title">
+                <h2>Отзывы клиентов</h2>
+                <img class="testimonials__quotes" src="assets/images/quote_mark.svg" alt="">
+            </div>
+
+            <div class="testimonials__slider">
+                <div class="testimonials__block">
+                    <div class="testimonials__block--itm">
+                        <div class="testimonials__block--cloud">
+                            <h4>Как же удобно!</h4>
+                            <p>В рамках спецификации современных стандартов, базовые сценарии поведения пользователей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.</p> 
+                        </div>
+                        <div class="testimonials__block--author">
+                            <img src="assets/images/feedback01.png" alt="">
+                            <div class="testimonials__block--name">
+                                <h4>Анна Купер</h4>
+                                <p>romashka.ru</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__block--itm">
+                        <div class="testimonials__block--cloud">
+                            <h4>Теперь мы идем в ногу со временем</h4>
+                            <p>А ещё интерактивные прототипы превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов формируют сеть.</p> 
+                        </div>
+                        <div class="testimonials__block--author">
+                            <img src="assets/images/feedback02.png" alt="">
+                            <div class="testimonials__block--name">
+                                <h4>Андрей Васильев</h4>
+                                <p>samogon-ont.ru</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__block--itm">
+                        <div class="testimonials__block--cloud">
+                            <h4>Как же удобно!</h4>
+                            <p>В рамках спецификации современных стандартов, базовые сценарии поведения пользователей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.</p> 
+                        </div>
+                        <div class="testimonials__block--author">
+                            <img src="assets/images/feedback01.png" alt="">
+                            <div class="testimonials__block--name">
+                                <h4>Анна Купер</h4>
+                                <p>romashka.ru</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--/.testimonials__block-->
+
+                <nav class='slider'>
+                    <button class="slider__toggle active" type="button"></button>
+                    <button class="slider__toggle" type="button"></button>
+                    <button class="slider__toggle" type="button"></button>
+                </nav>
+
+                <nav class='sliderX375'>
+                    <button class="sliderX375__toggle active" type="button"></button>
+                    <button class="sliderX375__toggle" type="button"></button>
+                    <button class="sliderX375__toggle" type="button"></button>
+                </nav>
+
+            </div> <!--/.testimonials__slider-->
+        </div> <!--/.testimonials__container-->
+    </section> <!--/.testimonials-->
+
+    <section class="cta">
+        <div class="cta__container">
+            <img src="assets/images/pic.png" alt="" class="cta__pic">
+            <div class="cta__plugIn">
+                <h2>Подключите Telegram чат уже сегодня</h2>
+                <form action="/" name='email'>
+                    <input class="cta__input" type="email" name='email' placeholder='Введите e-mail'>
+                    <button class="cta__sendButton" type='submit'>Отправить</button>
+                </form>
+            </div>
+        </div> <!--/.cta__container-->
+    </section> <!--/.cta-->
+
+    <footer>
+        <div class="footer__container">
+
+            <div class="footer__logo">
+                <img src="assets/images/logo.png" alt="">
+                <h2>tocha</h2>
+            </div>
+
+            <div class="footer__links">
+                <ul class="footer__telegram">
+                    <h2>Telegram-чат</h2>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Инструкция</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <ul class="footer__support">
+                    <h2>Поддержка</h2>
+                    <li><a href="#">Центр поддержки</a></li>
+                    <li><a href="#">Политика <br>конфиденциальности</a></li>
+                    <li><a href="#">Документы оферта</a></li>
+                    <li><a href="#">Документы оферта</a></li>
+                    <li><a href="#">Статус</a></li>
+                </ul>
+            </div>
+        </div> <!--/.footer__container-->
+
+        <div class="footer__copyright">
+            <div class="footer__copyright--text"><p>© 2021 Tocha. Все права защищены</p></div>
+        </div>
+    </footer>
+
+    <script src='assets/JS/slider.js'></script>
+</body>
+</html>

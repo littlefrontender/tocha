@@ -1,0 +1,171 @@
+// main: ../CSS/style.less
+
+.tarif {
+    padding: 100px 165px 50px 165px;
+}
+
+.tarif__title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.87rem;
+    line-height: 64px;
+}
+
+.tarif__headline p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 32px;
+    margin: 0;
+}
+
+.tarif__items {
+    position: relative;
+    width: 100%;
+    height: 387px;
+    margin-top: 40px;
+}
+
+.tarif__slider {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    width: 1100px;
+
+    .tarif__item {
+        max-width: 350px;
+        border-radius: 6px;
+        background: #FCFCFC;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+
+        &--title {
+           background: rgba(104, 94, 214, 0.05);
+           text-align: center;
+           font-weight: 800;
+            font-size: 24px;
+            line-height: 61px;
+            color: @violet;
+            border-radius: 6px 6px 0 0;
+            height: 61px;
+        }
+        &--inf {
+
+            h4 {
+                font-weight: bold;
+                font-size: 1.75rem;
+                line-height: 40px;
+                text-align: center;
+                color: @black;
+                margin-top: 40px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 30px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        }
+        &--btn {
+            width: 287px;
+            height: 48px;
+            text-align: center;
+            border: none;
+            border-radius: 6px;
+            background: @violet;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.125rem;
+            line-height: 24px;
+            margin:46px 31.5px 50px 31.5px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+            cursor: pointer;
+            transition: linear .2s background-color;
+
+            &:hover {
+                background-color: #33AFE1;
+                box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.14);
+            }
+    
+            &:active {
+                background-color: #18E1F7;
+                box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.14);
+            }
+        }
+    }
+}
+
+.sliderTarif {
+    display: none;
+    width: 0.001px;
+    height: 0.001px;
+}
+
+@media (max-width: 768px) {
+
+    .tarif {
+        padding: 54px 0px 33px 41px;
+    }
+
+    .tarif__items {
+        margin-top: 40px;
+    }
+
+    .tarif__slider {
+        width: 1020px;
+        transition: left .2s ease-in;
+    }
+
+    .tarif__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .tarif__headline p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .tarif__item {
+        width: 330px;
+
+        &--title {
+            font-size: 24px;
+            line-height: 48px;
+        }
+    }
+
+    .sliderTarif {
+        display: flex;
+        width: 54px;
+        height: 10px;
+        position: absolute;
+        left: 43%;
+        top: 400px;
+        justify-content: space-between;
+    
+        &__toggle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid @violet;
+            background-color: transparent;
+            transition: background-color .4s ease-in;
+            cursor: pointer;
+    
+            &.active {
+                background-color: @violet;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+
+    .tarif {
+        padding-left: 23px;
+    }
+}

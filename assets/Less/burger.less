@@ -1,0 +1,99 @@
+// main: ../CSS/style.less
+
+.header__burger {
+    display: none;
+}
+
+.header__popup {
+    display: none;
+}
+
+@media (max-width: 375px) {
+
+    .header__burger {
+        display: block;
+    }
+
+
+// Модальное окно / Бургер-меню
+    .header__popup {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0px;
+        height: 220px;
+        padding: 76px 30px 0 30px;
+        background-color: #fff;
+        visibility: hidden;
+        opacity: 0;
+
+        .popup__close {
+            width: 28px;
+            height: 28px;
+            top: 16px;
+            right: 16px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header__login {
+        display: block;
+        width: 177px;
+        height: 40px;
+        margin-bottom: 11px;
+        border-radius: 6px;
+        background: #F1E4FF;
+        color: #685ED6 ;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: linear .2s background-color;
+
+        &:hover {
+            background-color: #C39BFB;
+        }
+
+        &:active {
+            background-color: #685ED6;
+        }
+    }
+    .header__signin {
+        display: block;
+        width: 177px;
+        height: 40px;
+        background: #685ED6;
+        color: #fff;
+        border-radius: 6px;
+        border: none;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+        transition: linear .2s background-color;
+
+        &:hover {
+            background-color: #33AFE1;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.14);
+        }
+
+        &:active {
+            background-color: #18E1F7;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.14);
+        }
+    }
+}
+
+    .header__popup:target {
+        visibility: visible;
+        opacity: 1;
+        width: 237px;
+        transition: all .4s linear;
+    }
+
+}

@@ -1,0 +1,133 @@
+//main: ../CSS/style.less
+
+.footer__container {
+    width: 100%;
+    padding: 104px 165px 78px 168px;
+    background-color: #1D2530;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+    .footer__logo {
+
+        h2 {
+            color: #fff;
+            font-size: 2rem;
+            line-height: 24px;
+            font-weight: 700;
+        }
+    }
+
+    .footer__links {
+        display: flex;
+    }
+
+    .footer__telegram {
+        padding: 0;
+        margin: 0;
+        margin-right: 126px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 30px;
+            color: #F4F5F7;
+            margin-bottom: 32px;;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+    }
+
+    .footer__support {
+        padding: 0;
+        margin: 0;
+        margin-right: 132px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #F4F5F7;
+            margin-bottom: 32px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+    }
+
+ul {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: #EEEFF4;
+        transition: all .3s linear;
+        line-height: 26px;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Copryright
+
+.footer__copyright {
+    background-color: #141B23;
+    width: 100%;
+    height: 74px;
+    padding: 25px 0 25px 40px;
+
+    &--text {
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: #D9DBE1;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__container {
+        padding: 60px 149px 78px 43px;
+    }
+
+    .footer__support {
+        margin: 0;
+    }
+
+    .footer__telegram {
+        margin-right: 53px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    .footer__container {
+        padding: 60px 71px 0 26.06px;
+    }
+
+    .footer__links {
+        flex-wrap: wrap;
+        margin-left: 36.94px;
+
+        .footer__telegram {
+            margin-right: 0;
+
+            h2 {
+                margin-bottom: 16px;
+            }
+
+            li {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+// main: ../CSS/style.less
+
+.steps {
+    padding-top: 50px;
+    padding-left: 166px;
+    padding-right: 167px;
+    width: 100%;
+    height: 1155px;
+    background: url('../images/steps__Rectangle\ 594.png') no-repeat bottom;
+}
+
+.steps__title {
+    font-weight: 800;
+    color: @black;
+    font-size: 46px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.steps__sliderblock {
+    display: flex;
+    justify-content: space-between;
+    background: url('../images/steps__lines.png') no-repeat;
+    margin-top: 56px;
+}
+
+.steps__block {
+    text-align: center;
+    
+    .round {
+        width: 76px;
+        height: 76px;
+        background: #F1E4FF;
+        color: @violet;
+        font-size: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 76px;
+        margin: 20px auto 16px auto;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+    }
+
+    .info {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: @black;
+    }
+
+    &--2nd {
+        margin-top: 70px;
+
+        #second {
+            margin-top: 26.5px;
+        }
+    }
+
+    img {
+        display: block;
+        margin-top: 56px;
+    }
+}
+
+.steps__slider {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .steps {
+        padding-left: 37px;
+        padding-right: 36px;
+        background: url('../images/steps__Rectangle\ 594__x768.png') no-repeat bottom;
+        background-size: contain;
+        height: 887px;
+    }
+
+    // Заголовок
+    .steps__title {
+        font-size: 32px;
+        line-height: 40px;
+        width: 491px;
+        margin: 0 auto;
+    }
+
+    // Блоки с шагами и телефонами
+    .steps__sliderblock {
+        background: none;
+        margin-top: 39px;
+    }
+
+    .steps__block {
+
+        .title {
+            font-size: 19px;
+            line-height: 29px;
+        }
+
+        .info {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        img {
+            width: 211px;
+            margin: 0 auto;
+        }
+
+        .round {
+            font-size: 32px;
+            line-height: 76px;
+        }
+    }
+
+    .steps__block--2nd {
+        margin-top: 0;
+
+        #second {
+            margin-top: 0;
+        }
+    }
+}
+
+.steps__slider {
+    display: none;
+}
+
+@media (max-width: 375px) {
+
+    .steps {
+        padding-left: 23px;
+        padding-right: 23px;
+
+        .steps__container {
+            position: relative;
+        }
+
+        .steps__title {
+            width: 331px;
+        }
+
+        .steps__blocks {
+            position: relative;
+            height: 706px;
+            
+
+            .steps__sliderblock {
+                position: absolute;
+                margin-top: 27px;
+                top: 0;
+                left: 0;
+                width: 697.5px;
+                transition: left .2s ease-in;
+            }
+        }
+
+
+    }
+    
+
+
+// Слайдер
+        .steps__slider {
+            display: flex;
+            width: 54px;
+            height: 10px;
+            position: absolute;
+            left: 44%;
+            bottom: 11px;
+            justify-content: space-between;
+        
+            .sliderSteps__toggle {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid @violet;
+                background-color: transparent;
+                transition: background-color .4s ease-in;
+                cursor: pointer;
+        
+                &.active {
+                    background-color: @violet;
+                }
+            }
+        }
+        
+}

@@ -27,6 +27,8 @@
         background-color: #fff;
         visibility: hidden;
         opacity: 0;
+        transition: all .4s linear;
+        overflow: hidden;
 
         .popup__close {
             width: 28px;
@@ -89,11 +91,16 @@
     }
 }
 
-    .header__popup:target {
+    .header__popupShow {
         visibility: visible;
         opacity: 1;
         width: 237px;
-        transition: all .4s linear;
+    }
+
+    .header__popupClose {
+        visibility: hidden;
+        opacity: 0;
+        width: 0px;
     }
 
 }

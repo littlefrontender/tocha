@@ -26,12 +26,12 @@
             <a class="header__burger" href="#burger__open">
                     <img class="burger__pic" src="assets/icons/burger.svg" alt="">
             </a> <!--/.header__burger-->
-            <div class="header__popup" id='burger__open'>
+            <div class="header__popup header__popupClose" id='burger__open'>
                 <a href="#header"><img src='assets/icons/close.svg' class="popup__close" alt=''></a>
                 <a href="#log_popup"><button class="header__login" type='button'>Вход</button></a>
                 <a href="#sign_popup"><button class="header__signin" type='button'>Регистрация</button></a>
             </div> <!--/.header__popup-->
-        </div> <!--/.container__header-->
+        </div> <!--/.container__top-->
 
         <div class="header__entrance">
             <div class="header__greetings">
@@ -48,9 +48,9 @@
             </div> <!--/.header__greetings-->
         </div><!--/.header__entrance-->
 
-        <div class="signInPopup" id='sign_popup'>
+        <div class="signInPopup closePopup" id='sign_popup'>
                 <div class="signInPopup__window">
-                    <a href="#header"><img src='assets/icons/close.svg' class="popup__close" alt=''></a>
+                    <a href="#header"><img src='assets/icons/close.svg' class="popup__close" id='closeSignIn' alt=''></a>
                     <h2 class="signInPopup__title">Регистрация</h2>
                     <form action="/" class="signInPopup__form">
                     <input type="tel" class="telephone" placeholder='Телефон' id='telephone' required>
@@ -62,9 +62,9 @@
                 </div> <!--/.signInPopup__window-->
         </div> <!--/.signInPopup-->
 
-        <div class="logInPopup" id='log_popup'>
+        <div class="logInPopup closePopup" id='log_popup'>
                 <div class="logInPopup__window">
-                    <a href="#header"><img src='assets/icons/close.svg' class="popup__close" alt=''></a>
+                    <a href="#header"><img src='assets/icons/close.svg' class="popup__close" id='closeLogIn' alt=''></a>
                     <h2 class="logInPopup__title">Вход</h2>
                     <form action="/" class="logInPopup__form">
                     <input type="tel" class="telephone" placeholder='Телефон' id='telephone' required>

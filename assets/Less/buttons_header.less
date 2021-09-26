@@ -2,10 +2,10 @@
 
 // Модальное окно Регистрации
 
-.signInPopup:target  {
-    opacity: 1;
-    visibility: visible;
-}
+// .signInPopup:target  {
+//     opacity: 1;
+//     visibility: visible;
+// }
 
 .signInPopup {
     position: fixed;
@@ -15,6 +15,16 @@
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
+    // opacity: 0;
+    // visibility: hidden;
+}
+
+.showPopup {
+    opacity: 1;
+    visibility: visible;
+}
+
+.closePopup {
     opacity: 0;
     visibility: hidden;
 }
@@ -93,6 +103,7 @@
     }
 }
 
+// Анимация крестика
 .popup__close {
     position: absolute;
     top: 28px;
@@ -106,10 +117,10 @@
 
 // Модальное окно входа
 
-.logInPopup:target  {
-    opacity: 1;
-    visibility: visible;
-}
+// .logInPopup:target  {
+//     opacity: 1;
+//     visibility: visible;
+// }
 
 .logInPopup {
     position: fixed;
@@ -119,8 +130,8 @@
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
 }
 
 .logInPopup__window {
